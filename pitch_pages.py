@@ -70,7 +70,7 @@ class Pitch_Page:
 				self._create_pitch_page(lead_info)
                 self.leads_list.append(lead_info)
 		
-	def _get_lead_company_info(self,lead):
+    def _get_lead_company_info(self,lead):
         self.driver.get(lead[0])
         time.sleep(1)
         sel = Selector(text=self.driver.page_source)
